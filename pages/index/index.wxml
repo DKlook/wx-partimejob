@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+		<block>
+			<i-notice-bar icon="systemprompt" loop>
+					肥仔聪加入会员，景哥加入会员，程总加入会员！！！！
+			</i-notice-bar>
+		</block>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+		
+		<block>
+			<i-swipeout  i-class="i-swipeout-demo-item" wx:for="index in 10" wx:key="index" actions="{{actions}}" toggle="{{toggle}}" unclosable="{{false}}" bindchange="handlerCloseButton">
+        <view slot="content">
+            <i-cell 
+                i-class="i-cell-padding" 
+                title="可点击按钮关闭" 
+                label="侏罗纪世界主题公园及豪华度假村被失控的恐龙们摧毁已有四年">
+            </i-cell>
+        </view>
+			</i-swipeout>
+		</block>
+		
+		<block>
+			<i-card title="卡片标题" i-class="car-item" wx:for="index in 10" wx:key="index" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+					<view slot="content">内容不错</view>
+					<view slot="footer">尾部内容</view>
+			</i-card>
+		</block>
+		
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

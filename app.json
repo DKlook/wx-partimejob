@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+		"pages/like/like",
+		"pages/percenter/percenter"
+  ],
+  "window":{
+    "backgroundTextStyle":"#ff",
+    "navigationBarBackgroundColor": "#f56c6c",
+    "navigationBarTitleText": "优选兼职",
+    "navigationBarTextStyle":"#fff"
+  },
+	"tabBar": {
+		"backgroundColor": "#f56c6c",
+		"selectedColor": "#fff",
+		"color": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+				"iconPath": "images/index.png",
+				"selectedIconPath": "images/index_active.png",  
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/like/like",
+				"iconPath": "images/like.png",
+				"selectedIconPath": "images/like_active.png",  
+        "text": "收藏"
+      },
+      {
+        "pagePath": "pages/percenter/percenter",
+				"iconPath": "images/percenter.png",
+				"selectedIconPath": "images/percenter_active.png",  
+        "text": "个人中心"
+      }
+    ]
+  }
+}

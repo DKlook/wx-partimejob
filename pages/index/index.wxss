@@ -1,0 +1,24 @@
+/**index.wxss**/
+.userinfo {
+  width: 100%;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+	text-align: center;
+}
+
+.userinfo .car-item{
+	margin-bottom: 10px;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
