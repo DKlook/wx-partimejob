@@ -3,7 +3,7 @@
   <view class="userinfo">
 		<block>
 			<i-notice-bar icon="systemprompt" loop>
-					肥仔聪加入会员，景哥加入会员，程总加入会员！！！！
+					添加修改肥仔聪加入会员，景哥加入会员，程总加入会员！！！！
 			</i-notice-bar>
 		</block>
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
